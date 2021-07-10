@@ -19,7 +19,12 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a73
 
-TARGET_USES_AOSP_RECOVERY := true
+#######
+# When TARGET_USES_AOSP_RECOVERY is true,
+# set ADDITIONAL_BUILD_PROPERTIES += persist.sys.recovery_update=true
+# As result, flash AOSP recovery, instead of TWRP
+#######
+# TARGET_USES_AOSP_RECOVERY := true
 
 # Audio
 AUDIO_FEATURE_ENABLED_EXT_AMPLIFIER := true
